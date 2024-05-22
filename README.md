@@ -1,0 +1,1 @@
+基于Netty搭建的可替代SpringBoot内嵌Tomcat的Http服务器，支持Http基本请求如Get、Post、Put、Delete以及路径参数、查询参数、请求体内form-data参数和json格式数据等多种参数形式并可以完整返回响应数据
