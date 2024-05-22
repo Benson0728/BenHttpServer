@@ -4,7 +4,7 @@ import com.alibaba.fastjson2.JSONObject;
 import com.benson.annotation.*;
 import com.benson.vo.Result;
 
-@MyController
+@Controller
 public class TestController2 {
     @Get("/test4")
     public Result testGet4(@RequestParam("name") String name){

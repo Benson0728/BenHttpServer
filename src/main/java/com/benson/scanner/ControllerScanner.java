@@ -1,6 +1,6 @@
 package com.benson.scanner;
 
-import com.benson.annotation.MyController;
+import com.benson.annotation.Controller;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider;
 import org.springframework.core.type.filter.AnnotationTypeFilter;
@@ -20,7 +20,7 @@ public class ControllerScanner {
 
     public static Set<Class<?>> scanForMyControllerClasses() {
         ClassPathScanningCandidateComponentProvider scanner = new ClassPathScanningCandidateComponentProvider(false);
-        scanner.addIncludeFilter(new AnnotationTypeFilter(MyController.class));
+        scanner.addIncludeFilter(new AnnotationTypeFilter(Controller.class));
 
         Set<Class<?>> controllerClasses = new HashSet<>();
         for (String basePackage : getBasePackages()) {

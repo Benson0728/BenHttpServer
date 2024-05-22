@@ -6,5 +6,5 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Inherited
 @Retention(RetentionPolicy.RUNTIME)
-public @interface MyController {
+public @interface Controller {
 }

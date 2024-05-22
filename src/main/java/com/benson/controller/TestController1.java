@@ -3,7 +3,7 @@ package com.benson.controller;
 import com.benson.annotation.*;
 import com.benson.vo.Result;
 
-@MyController
+@Controller
 public class TestController1 {
     @Get("/test1/{number}")
     public Result testGet1(@PathVariable("number") Long number, @RequestParam("name") String name ){
